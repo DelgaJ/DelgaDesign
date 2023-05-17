@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html>
+<!-- Animated Background -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Justin Delgado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+</head>
+
+<div id="preloader">
+
+</div>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header>
+        <h2 class="logo"><span>J</span>D.</h2>
+        <nav class="navigation">
+            <a href="#1">Home</a>
+            <a href="#2">About</a>
+            <a href="#3">Projects</a>
+            <a href="#4">Skills</a>
+        </nav>
+    </header>
+
+    <span class="cursor">
+        <span class="cursor-move-inner">
+          <span class="cursor-inner"></span>
+    </span>
+    <span class="cursor-move-outer">
+          <span class="cursor-outer"></span>
+    </span>
+    </span>
+
+
+
+    <div class="container">
+
+        <!-- First Page -->
+        <section class="one" id="1">
+            <div class="content">
+                <h2>Hi, I'm <span>Justin Delgado</span></h2>
+                <h4>Software Engineer</h4>
+                <p>Lorem ispum dolor sit amet consectetur adipisicing elit. A esse totam provident voluptas similique. Impedit incidunt atque recusandae rem quam.</p>
+                <div class="btn-group">
+                    <a href="#">Resume/CV</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/delgaj/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/DelgaJ"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto: delgadoj0226@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+
+                <div class="scroll-icon ex-3">
+                    <span class="wheel"></span>
+                    <span class="arrow up"></span>
+                    <span class="arrow down"></span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Second Page -->
+        <section class="two" id="2">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>Based in New Jersey, I am a <span>software engineer</span> and <span>web designer</span> with a passion for diverse and innovative workspaces. As a recent graduate of Kean University, I have worked in tech, pharmaceutical, and retail spaces
+                    over several years. Most recently, I was involved with the AI4ALL organization as an Assistant Teacher. My involvement in Artificial Intelligence research also led to a publication and presentation during the 2022 International Conference
+                    on Computational Science and Computational Intelligence (CSCI). </p>
+
+                <div class="scroll-icon ex-3">
+                    <span class="wheel"></span>
+                    <span class="arrow up"></span>
+                    <span class="arrow down"></span>
+                </div>
+            </div>
+
+            <!-- Slider -->
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="about\1.JPG" style="width:100%; border-radius: 15px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="about\2.JPG" style="width:100%; border-radius: 15px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="about\3.JPG" style="width:100%; border-radius: 15px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="about\4.JPG" style="width:100%; border-radius: 15px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="about\5.JPG" style="width:100%; border-radius: 15px;">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="about\6.JPG" style="width:100%; border-radius: 15px;">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Next/previous controls
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+
+            <br>
+
+        </section>
+
+        <!-- Third Page -->
+        <section class="three" id="3">
+
+
+            <div class="content">
+                <h2>Projects</h2>
+                <p>Hover over each project to view more information. Each project is also accessible via GitHub. </p>
+
+                <div class="scroll-icon ex-3">
+                    <span class="wheel"></span>
+                    <span class="arrow up"></span>
+                    <span class="arrow down"></span>
+                </div>
+            </div>
+
+            <div class="image-grid">
+                <img src="project\pj_1.png">
+                <img src="project\pj_2.png">
+                <img src="project\pj_3.jpg">
+                <img src="project\pj_4.png">
+                <img src="project\pj_5.jpg">
+                <img src="project\pj_6.jpg">
+            </div>
+
+        </section>
+
+        <!-- Fourth Page -->
+        <section class="four" id="4">
+            <div class="content">
+                <h2>Skills</h2>
+                <p>During my time at Kean University, courses such as Software Engineering, Artificial Intelligence, Information Systems Programming, and Computer Organization & Architecture have supplemented my ability to develop software in several languages,
+                    manipulate databases, work in team atmospheres (Agile), and communicate effectively with clients in technical environments. Outside of academics, my time as a Shift Supervisor at Rite Aid helped me to become passionate about the healthcare
+                    industry and develop my knowledge and communication skills within health-based environments.
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function() {
+            loader.style.display = "none";
+        })
+    </script>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+<script type="module" defer src="script.js"></script>
+
+</html>
