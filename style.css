@@ -390,12 +390,12 @@ header {
     gap: var(--gap);
 }
 
-.image-grid>img {
+.image-grid>a img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.image-grid>img:hover {
+.image-grid>a img:hover {
     opacity: 0.3;
 }
